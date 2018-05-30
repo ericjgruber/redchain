@@ -1,6 +1,10 @@
 <?php
 
+/*
+ * Implements hook_form_alter()
+ */
 function redchain_form_alter(&$form,  \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  /* Change the search form input button text */
   if ($form_id == 'search_block_form') {
     $form['actions']['submit']['#value'] = t('Search Episodes');
   }
