@@ -1,3 +1,31 @@
+/* General Styles */
 body {
   font-family: sans-serif;
+}
+
+/* Branding Styles */
+#block-redchain-branding {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-logo img {
+  width: 200px;
+  height: 200px;
+  order: 1;
+}
+
+.site-name {
+  order: 2;
+}
+
+.site-name a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+.site-name a:hover {
+  text-decoration: underline;
 }
