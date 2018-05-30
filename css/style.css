@@ -29,3 +29,29 @@ body {
 .site-name a:hover {
   text-decoration: underline;
 }
+
+/* Content Area Layout */
+.layout-container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+main {
+  display: flex;
+}
+
+.layout-content {
+  order: 1;
+  width: 80%;
+}
+
+aside.layout-sidebar-first {
+  order: 2;
+  width: 20%;
+}
+
+/* Menu Styles */
+nav#block-redchain-main-menu {
+  background-color: #333;
+}
