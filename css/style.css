@@ -52,6 +52,16 @@ aside.layout-sidebar-first {
 }
 
 /* Menu Styles */
-nav#block-redchain-main-menu {
+.region.region-primary-menu {
   background-color: #333;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c5c5c), to(#111));
+}
+
+#block-redchain-main-menu ul.menu {
+  margin: 0;
+  padding: 8px 100px;
+}
+
+#block-redchain-main-menu ul.menu a {
+  color: #fff;
 }
