@@ -1,5 +1,7 @@
 <?php
 
 function redchain_form_alter(&$form,  \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  $form['actions']['submit']['#value'] = t('Search Episodes');
+  if ($form_id == 'search_block_form') {
+    $form['actions']['submit']['#value'] = t('Search Episodes');
+  }
 }
